@@ -17,5 +17,4 @@ Resource: AE_RSS_STG2
 	Pressure: 15 Labor
 	Pressure: 15 Energy
 	Pressure: 5 Influence
-	RegenSurface(26, 16, Biome Count = 5)
 	AddFTLStorage(200)

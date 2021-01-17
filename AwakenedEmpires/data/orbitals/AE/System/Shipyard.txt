@@ -7,5 +7,6 @@ Module: ShipYardLvl1
 	Material: GenericPBR_Forge
 	Health: 500000
 	Armor: 500000
+	IfInOwnedSpace(TriggerPeriodic(RandomTrigger(0.1, SpawnShip(, Supports = )), Interval = 540, Random Margin = 60))
 	RequireNever()
 	SetSystemFlag(ShipYardlvl1)
