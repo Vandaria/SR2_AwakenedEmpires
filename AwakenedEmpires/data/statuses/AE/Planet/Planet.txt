@@ -1,0 +1,9 @@
+Status: AE_STS_PLNT_PLNT1
+	Visible To: Nobody
+	Icon: StatusPeace
+	AddDummyResource(Hydroconductors, Amount = 20)
+	AddDummyResource(DegenerateMatter, Amount = 20)
+	AddDummyResource(Titanium, Amount = 30)
+	AddDummyResource(Water, Amount = 20)
+	AddDummyResource(Meat, Amount = 20)
+	TriggerPeriodic(AddStatus(AE_STS_PLNT_PLNT2), Interval = 600, Max Triggers = 1)

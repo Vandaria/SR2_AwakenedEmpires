@@ -1,0 +1,11 @@
+Module: ShipYardLvl1
+	Icon: GuiOrbitalIcons::3
+	Strategic Icon: OrbitalIcons::3
+	Size: 20
+	Mass: 2500000
+	Model: Forge
+	Material: GenericPBR_Forge
+	Health: 500000
+	Armor: 500000
+	RequireNever()
+	SetSystemFlag(ShipYardlvl1)

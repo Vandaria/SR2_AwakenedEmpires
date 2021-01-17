@@ -1,0 +1,21 @@
+Resource: AE_RSS_STG2
+	Icon: emp_flag_flag04*#9dffb9
+	Small Icon: emp_flag_flag04*#9dffb9
+	Name: #AE_RSS_STG2
+	Native Biome: Crystallic
+	Frequency: 0
+	Exportable: False
+	Artificial: True
+	Mode: Universal Unique
+	Rarity: Unique
+	Display Requirement: False
+	Can Be Terraformed: False
+	Distribution: 0
+	Affinity: ALL
+	Pressure: 0 Money
+	Pressure: 0 Defense
+	Pressure: 15 Labor
+	Pressure: 15 Energy
+	Pressure: 5 Influence
+	RegenSurface(26, 16, Biome Count = 5)
+	AddFTLStorage(200)

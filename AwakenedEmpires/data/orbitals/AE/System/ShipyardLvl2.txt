@@ -1,0 +1,11 @@
+Module: ShipYardLvl2
+	Icon: GuiOrbitalIcons::16
+	Strategic Icon: OrbitalIcons::16
+	Size: 20
+	Mass: 2500000
+	Model: Drydock
+	Material: GenericPBR_Drydock
+	Health: 5000000
+	Armor: 5000000
+	RequireNever()
+	SetSystemFlag(ShipYardlvl2)

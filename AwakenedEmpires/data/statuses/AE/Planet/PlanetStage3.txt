@@ -1,0 +1,9 @@
+Status: AE_STS_PLNT_PLNT3
+	Icon: StatusCeaseFire
+	Visible To: Nobody
+	IfHaveTrait(AE_TRT_EMP_MAIN, TriggerPeriodic(SpawnShip(CruiserA, Design From = Creeps, ), Interval = 540))
+	IfHaveTrait(AE_TRT_EMP_MAIN, TriggerPeriodic(SpawnShip(CruiserA, Design From = Creeps, ), Interval = 540))
+	IfNotSiege(Repeat(5, AddTurret(SubspaceShredder, Range=2000, Damage=2000, Reload=2, Speed = 500 )))
+	IfUsingLabor(AddLaborFactor(2))
+	TriggerPeriodic(TerraformTo(AE_RSS_STG3), 600, Max Triggers = 1)
+	TriggerPeriodic(AddStatus(AE_STS_PLNT_PLNT4), 600, Max Triggers = 1)

@@ -1,0 +1,5 @@
+Status: AE_STS_PLNT_HS
+	Icon: PoliticalStrengthIcon
+	Visible To: Nobody
+	TriggerPeriodic(RemoveStatus(AE_STS_PLNT_HS), Interval = 5400)
+	CannotUseLabor()

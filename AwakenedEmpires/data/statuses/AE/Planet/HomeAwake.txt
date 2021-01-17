@@ -1,0 +1,6 @@
+Status: AE_STS_PLNT_HA
+	Icon: MaskHappy
+	Visible To: Nobody
+	TriggerPeriodic(AddStatus(AE_STS_PLNT_PLNT4), 5, 1)
+	TriggerPeriodic(AddEmpireResource(Research, 100000), 2, 1)
+	RemoveAllStatus(AE_STS_PLNT_HS)

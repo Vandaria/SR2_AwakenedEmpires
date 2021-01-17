@@ -1,0 +1,8 @@
+Preset: FallenEmpire
+	Name: #AE_RACE_AE 
+	Tagline: #AE_RACE_AE_TAG
+	Lore: #AE_RACE_AE_LORE
+	Portrait: emp_portrait_science
+	Shipset: Moirai
+
+	Trait: AE_TRT_EMP_MAIN
