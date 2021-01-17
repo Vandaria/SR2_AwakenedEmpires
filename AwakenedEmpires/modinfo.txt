@@ -1,4 +1,4 @@
-	Name: AwakenedEmpires
+	Name: AwakenedEmpiresTEST
 	Compatibility: 200
 	Description: <<
 		Adds in Fallen Empires similar to Stellaris
