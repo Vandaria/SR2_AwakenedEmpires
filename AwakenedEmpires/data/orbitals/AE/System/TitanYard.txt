@@ -9,6 +9,7 @@ Module: AE_ORB_TITAN_POINT1
 	Icon Size: 0.003
 	Size: 200
 	OnEnable(MoveToSystemCenter())
+	RequireNever()
 	TriggerPeriodic(SpawnShip(A.N.G.E.L Platform, Design From = Creeps, , Offset = 1000), Interval = 1, Max Triggers = 10)
 	TriggerPeriodic(SpawnShip(FE Seige Platform, Design From = Creeps, , Offset = 600), Interval = 120)
 	TriggerPeriodic(SpawnShip(FE Cannon Platform , Design From = Creeps, , Offset = 600), Interval = 120)
