@@ -7,5 +7,9 @@ Module: ShipYardLvl2
 	Material: GenericPBR_Drydock
 	Health: 5000000
 	Armor: 5000000
+	Name: Cruiser Shipyard
+	IfAttributeLT(TotalCruiser, 15, TriggerPeriodic(RandomTrigger(0.1, SpawnShip(Cruiser Type C, Design From = Creeps, , Add Status = AE_STS_COUNT_CRUISER, Offset = 100)), Interval = 540))
+	IfAttributeLT(TotalCruiser, 15, TriggerPeriodic(RandomTrigger(0.4, SpawnShip(Cruiser Type B, Design From = Creeps, , Add Status = AE_STS_COUNT_CRUISER, Offset = 100)), Interval = 540))
+	IfAttributeLT(TotalCruiser, 15, TriggerPeriodic(RandomTrigger(0.4, SpawnShip(Cruiser Type A, Design From = Creeps, , Add Status = AE_STS_COUNT_CRUISER, Offset = 100)), Interval = 540))
 	RequireNever()
 	SetSystemFlag(ShipYardlvl2)

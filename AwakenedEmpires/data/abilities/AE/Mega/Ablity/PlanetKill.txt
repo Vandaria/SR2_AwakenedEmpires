@@ -1,0 +1,14 @@
+Ability: AE_ABL_MEGA_C_PK
+	Target: targ = Object
+	Cooldown: 120
+	Name: AE_ABL_MEGA_C_PK
+	Range: 1000
+	TargetFilterPlanetLevel(targ, 3)
+	AddStatusSelf(Entangled, Duration = 120)
+	OffensiveToTarget(targ)
+	DealStellarDamageOverTime(targ, 30000000)
+	IsToggleTarget(targ, Range Margin = 1.5)
+	AutoCastNearby(Target = targ)
+	PersistentBeamEffect(targ, #e45500, Tractor, Width = 8.0)
+	TargetFilterType(targ, Planet)
+	TargetFilterWar(targ)

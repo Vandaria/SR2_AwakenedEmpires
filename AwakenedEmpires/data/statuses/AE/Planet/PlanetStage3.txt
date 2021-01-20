@@ -1,13 +1,11 @@
 Status: AE_STS_PLNT_PLNT3
 	Icon: StatusCeaseFire
 	Visible To: Nobody
-	IfHaveTrait(AE_TRT_EMP_MAIN, TriggerPeriodic(RandomTrigger(0.2, SpawnShip(Cruiser Type C, Design From = Creeps, )), Interval = 900))
-	IfHaveTrait(AE_TRT_EMP_MAIN, TriggerPeriodic(RandomTrigger(0.4, SpawnShip(Cruiser Type B, Design From = Creeps, )), Interval = 900))
-	IfHaveTrait(AE_TRT_EMP_MAIN, TriggerPeriodic(RandomTrigger(0.4, SpawnShip(Cruiser Type A, Design From = Creeps, )), Interval = 900))
-	IfHaveTrait(AE_TRT_EMP_MAIN, TriggerPeriodic(RandomTrigger(0.6, SpawnShip(Artillery Type A, Design From = Creeps, )), Interval = 540))
-	IfHaveTrait(AE_TRT_EMP_MAIN, TriggerPeriodic(RandomTrigger(0.6, SpawnShip(Artillery Type A, Design From = Creeps, )), Interval = 540))
-	IfHaveTrait(AE_TRT_EMP_MAIN, TriggerPeriodic(RandomTrigger(0.6, SpawnShip(Artillery Type B, Design From = Creeps, )), Interval = 540))
-	IfNotSiege(Repeat(5, AddTurret(SubspaceShredder, Range=2000, Damage=2000, Reload=2, Speed = 500 )))
-	IfUsingLabor(AddLaborFactor(2))
-	TriggerPeriodic(TerraformTo(AE_RSS_STG3), 600, Max Triggers = 1)
-	TriggerPeriodic(AddStatus(AE_STS_PLNT_PLNT4), 600, Max Triggers = 1)
+
+	IfHaveTrait(AE_TRT_EMP_MAIN, IfNotSystemFlag(ShipYardlvl2, IfNotSiege(TriggerPeriodic(SpawnOrbital(ShipYardLvl2, In Orbit = True), Interval = 300))))
+	IfHaveTrait(AE_TRT_EMP_MAIN, IfHaveStatus(AE_STS_PLNT_PLNT2, RemoveAllStatus(AE_STS_PLNT_PLNT2)))
+	SetMaxLevel(4)
+	IfHaveTrait(AE_TRT_EMP_MAIN, IfNotSystemFlag(AElvl4, TriggerPeriodic(AddStatus(AE_STS_PLNT_PLNT4), Interval = 600)))
+	SetSystemFlag(AElvl3)
+	IfHaveTrait(AE_TRT_EMP_MAIN, IfUsingLabor(AddLaborFactor(2)))
+	IfHaveTrait(AE_TRT_EMP_MAIN, TriggerPeriodic(TerraformTo(AE_RSS_STG3), 600, Max Triggers = 1))

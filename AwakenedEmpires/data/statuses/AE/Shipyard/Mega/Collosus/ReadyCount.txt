@@ -1,0 +1,10 @@
+Status: AE_STS_MEGA_C_READYCOUNT
+	Visible To: Nobody
+	ModEmpireAttribute(AE_FE_COLLOSI_YES, Add, 1)
+	SetSystemFlag(AE_COLLOSI_BUILD)
+Status: AE_STS_MEGA_C_BUILT
+	Visible To: Nobody
+	GrantAbility(AE_ABL_MEGA_C_PK)
+	GrantAbility(AE_ABL_MEGA_C_ION)
+	SetSystemFlag(CollosiComplete)
+	ModEmpireAttribute(AE_FE_COLLOSI_YES, Add, 1)

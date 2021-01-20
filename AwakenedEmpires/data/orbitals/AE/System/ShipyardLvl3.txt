@@ -7,5 +7,8 @@ Module: ShipYardLvl3
 	Material: GenericPBR_Shipyard
 	Health: 10000000
 	Armor: 10000000
+	Name: Carrier Shipyard
+	IfAttributeLT(TotalCarrier, 8, TriggerPeriodic(RandomTrigger(0.3, SpawnShip(Carrier Type A, Design From = Creeps, , Add Status = AE_STS_COUNT_CARRIER, Offset = 100)), Interval = 540))
+	IfAttributeLT(TotalCarrier, 8, TriggerPeriodic(RandomTrigger(0.3, SpawnShip(Carrier Type B, Design From = Creeps, , Add Status = AE_STS_COUNT_CARRIER, Offset = 100)), Interval = 540))
 	RequireNever()
 	SetSystemFlag(ShipYardlvl3)

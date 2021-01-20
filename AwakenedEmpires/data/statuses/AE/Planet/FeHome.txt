@@ -1,0 +1,3 @@
+Status: AE_STS_FE_HOME
+	Icon: SupportYeaIcon
+	IfHaveTrait(AE_TRT_EMP_MAIN, IfAttributeZero(AE_FE_COLLOSI_YES, IfHaveStatus(AE_STS_PLNT_PLNT4, TriggerPeriodic(SpawnOrbital(AE_ORB_TITAN_POINT1), Interval = 600))))
