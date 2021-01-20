@@ -15,7 +15,7 @@ Module: AE_ORB_TITAN_POINT1
 	TriggerPeriodic(SpawnShip(FE Cannon Platform , Design From = Creeps, , Offset = 600), Interval = 120)
 	TriggerPeriodic(SpawnShip(FE Flak Platform, Design From = Creeps, , Offset = 500), Interval = 120)
 	TriggerPeriodic(Destroy(), Interval = 901)
-	TriggerPeriodic(SpawnOrbital(AE_ORB_TITAN_POINT2, Free = True, In Orbit = True), Interval = 900, Max Triggers = 1, Random Margin = 300)
+	TriggerPeriodic(SpawnOrbital(AE_ORB_TITAN_POINT2, Free = True, In Orbit = True), Interval = 900, Max Triggers = 1)
 	CountAsPlanet()
 	BlockSystemFTL(Block Friendly = True)
 	AddStatus(AE_STS_MEGA_C_OVERALLCOUNT)
