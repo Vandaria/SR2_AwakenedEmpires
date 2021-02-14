@@ -1,0 +1,55 @@
+Effector: AE_EFFECTOR_IL
+	Value: Range
+	Value: DPS
+	Value: Duration
+	Value: Reload
+	Value: Tracking
+	Value: SupplyCost = 0
+	Value: FireArc = pi
+
+	Range: Range
+	Lifetime: Duration
+	Tracking: Tracking
+	FireArc: FireArc
+
+	TargetAlgorithm: SingleTarget
+	CanTarget: isEnemy && isDamageable
+	AutoTarget: isEnemy && (isShip || (isOrbital || isColonyShip || isCivilian || isFreighter) * 0.5)
+
+	EfficiencyMode: Duration Partial
+	Activation: Magazine(FireDelay, PodSize, Reload)
+	OnTrigger: combat::WeaponFire(SupplyCost)
+
+	Effect: EnergyDamage
+		Amount = DPS
+
+	PhysicalType: Beam
+	GfxSize: 0.3
+	FirePitchVariance: 0.06
+	FireSfx: laser_fire
+	FireSfx: laser_fire_2
+	FireSfx: laser_fire_3
+	FireSfx: laser_fire_4
+	Material: Laser
+	ImpactGfx: ImpactFlareLaserRed
+	TrailCol: ff3300aa, ff33ffaa
+	Value: FireDelay
+	Value: PodSize = 1
+	Value: Spread
+	Spread: Spread
+
+	Skin: Skin1
+		ImpactGfx: ImpactFlareLaserGold
+		TrailCol: ffee99aa, ffee99aa
+
+	Skin: Skin2
+		ImpactGfx: ImpactFlareLaserBlue
+		TrailCol: 00ccddaa, 00ccddaa
+
+	Skin: Skin3
+		ImpactGfx: ImpactFlareLaserViolet
+		TrailCol: ff99ffaa, ff99ffaa
+
+	Skin: Hyper
+		ImpactGfx: ImpactFlareHyperLaserViolet
+		TrailCol: ff00ffff, ff00ffff

@@ -1,0 +1,6 @@
+Building: AE_BLD_PLNT_HA
+	Name: #AETimeTrack
+	Sprite: CoreBuilding
+	TriggerPeriodic(AddStatus(AE_STS_PLNT_HA), Interval = 5400, Max Triggers = 1)
+	RequireNever()
+	TriggerPeriodic(RemoveStatus(AE_STS_PLNT_HS), Interval = 5400, Max Triggers = 1)

@@ -1,0 +1,5 @@
+Status: AE_STS_PLNT_HS
+	Icon: PoliticalStrengthIcon
+	ModLoyalty(1000)
+	AddInfluenceStake(-100)
+	CannotUseLabor()

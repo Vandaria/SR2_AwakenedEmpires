@@ -1,0 +1,21 @@
+Subsystem: AE_SUB_TIT_HULL
+	Name: EHRHUll
+
+	Tags: Applied:Hull, Category:Hulls, NoCore
+	Hull: Flagship
+	EvaluationOrder: -200
+	BaseColor: #b0adb5
+
+	HexLimit := 9000
+
+	AddShipModifier: MassFactor(0.4)
+	AddShipModifier: RepairFactor(0.05)
+	AddShipModifier: SupplyFactor(10)
+	AddShipModifier: RangeFactor(1.5)
+	AddShipModifier: RadiusFactor(2)
+	AddShipModifier: FlagshipHull::GridHeightFactor(2)
+	AddShipModifier: FlagshipHull::GridWidthFactor(2)
+
+	Module: Default
+		Sprite: HullSubsystems::1
+		DrawMode: 3

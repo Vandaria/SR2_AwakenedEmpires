@@ -1,0 +1,3 @@
+AE_RSS_STG2: Awakening World
+AE_RSS_STG3: Awakend World
+AE_RSS_STG4: Advanced Awakened World

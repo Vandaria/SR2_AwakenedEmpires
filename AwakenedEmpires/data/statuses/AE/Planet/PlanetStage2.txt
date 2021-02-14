@@ -1,0 +1,10 @@
+Status: AE_STS_PLNT_PLNT2
+	Icon: StatusWar
+	Visible To: Nobody
+	TriggerPeriodic(SpawnShip(A.N.G.E.L Platform, Design From = Creeps, , Offset = 1000), Interval = 1, Max Triggers = 2)
+	IfHaveTrait(AE_TRT_EMP_MAIN, IfNotSystemFlag(AElvl3, TriggerPeriodic(AddStatus(AE_STS_PLNT_PLNT3), Interval = 600)))
+	SetMaxLevel(3)
+	IfHaveTrait(AE_TRT_EMP_MAIN, IfNotSystemFlag(AElvl3, TriggerPeriodic(AddStatus(AE_STS_PLNT_PLNT3), Interval = 600)))
+	IfHaveTrait(AE_TRT_EMP_MAIN, IfNotSystemFlag(ShipYardlvl1, IfNotSiege(TriggerPeriodic(SpawnOrbital(ShipYardLvl1, In Orbit = True), Interval = 300))))
+	IfHaveTrait(AE_TRT_EMP_MAIN, IfUsingLabor(AddLaborFactor(1.5)))
+	IfHaveTrait(AE_TRT_EMP_MAIN, TriggerPeriodic(TerraformTo(AE_RSS_STG2), Interval = 1, Max Triggers = 1)))

@@ -1,0 +1,16 @@
+Module: ShipYardLvl1
+	Icon: GuiOrbitalIcons::3
+	Strategic Icon: OrbitalIcons::3
+	Size: 20
+	Mass: 2500000
+	Model: Forge
+	Material: GenericPBR_Forge
+	Health: 500000
+	Armor: 500000
+	Name: Artillery Shipyard
+
+	RequireNever()
+	IfAttributeLT(TotalArtillery, 20, TriggerPeriodic(RandomTrigger(0.3, SpawnShip(Artillery Type C, Design From = Creeps, , Add Status = AE_STS_COUNT_ARTILLERY, Offset = 100)), Interval = 300))
+	IfAttributeLT(TotalArtillery, 20, TriggerPeriodic(RandomTrigger(0.3, SpawnShip(Artillery Type B, Design From = Creeps, , Add Status = AE_STS_COUNT_ARTILLERY, Offset = 100)), Interval = 300))
+	IfAttributeLT(TotalArtillery, 20, TriggerPeriodic(RandomTrigger(0.3, SpawnShip(Artillery Type A, Design From = Creeps, , Add Status = AE_STS_COUNT_ARTILLERY, Offset = 100)), Interval = 300))
+	SetSystemFlag(ShipYardlvl1)
