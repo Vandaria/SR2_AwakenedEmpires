@@ -1,4 +1,0 @@
-Status: AE_STS_REGION_TRADE
-	Visible To: Nobody
-	GivesVisionToOriginEmpire()
-	GiveTrade()

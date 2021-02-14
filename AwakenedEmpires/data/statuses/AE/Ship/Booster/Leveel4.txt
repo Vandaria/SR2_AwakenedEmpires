@@ -1,4 +1,0 @@
-Status: AE_STS_SHIP_BOOST_LVL4
-	AddFleetEffectiveness(0.2)
-	AddBonusSupportCapPct(Percentage = 0.5)
-	AddAccelerationBonus(2)

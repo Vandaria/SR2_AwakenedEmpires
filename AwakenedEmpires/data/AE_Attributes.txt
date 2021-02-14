@@ -1,8 +1,0 @@
-Empire {
-	Attributes Attributes
-visible:
-	attribute double TotalCruiser = 0
-	attribute double TotalArtillery = 0
-	attribute double TotalCarrier = 0
-	attribute double AE_FE_COLLOSI_YES = 0
-}

@@ -1,6 +1,0 @@
-AE_RACE_AE: Fallen Empire
-AE_RACE_AE_LORE: <<|
-A Fallen Empire that well awaken after a certain length of time ingame. 
-[b]NOT FOR PLAYER USE[/b]
->>
-AE_RACE_AE_TAG: Fallen Empire
